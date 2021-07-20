@@ -12,7 +12,29 @@ class Exercise1 extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: null,
+      body: myExercise1(),
+    );
+  }
+}
+
+class myExercise1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Flex(
+        direction: Axis.vertical,
+        children: [
+          Expanded(
+            child: Container(color: Colors.green),
+          ),
+          Expanded(
+            child: Container(color: Colors.yellow),
+          ),
+          Expanded(
+            child: Container(color: Colors.pink),
+          ),
+        ],
+      ),
     );
   }
 }
