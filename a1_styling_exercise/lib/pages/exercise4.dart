@@ -12,7 +12,44 @@ class Exercise4 extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: null,
+      body: myExercise4(),
+    );
+  }
+}
+
+class myExercise4 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        alignment: Alignment.center,
+        height: 200,
+        margin: EdgeInsets.only(left: 20, right: 20),
+        child: Card(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ListTile(
+                leading: CircleAvatar(
+                  radius: 50,
+                  backgroundColor: Colors.green,
+                ),
+                title: Container(
+                  color: Colors.pink,
+                  width: 20.0, // 不生效？？
+                  height: 30,
+                ),
+                subtitle: Container(
+                  margin: EdgeInsets.only(top: 10),
+                  width: 100, // 不生效？？
+                  color: Colors.pink,
+                  height: 30,
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
