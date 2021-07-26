@@ -21,11 +21,10 @@ class myExercise4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Container(
-        alignment: Alignment.center,
+      child: SizedBox(
         height: 200,
-        margin: EdgeInsets.only(left: 20, right: 20),
         child: Card(
+          margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -35,17 +34,15 @@ class myExercise4 extends StatelessWidget {
                   backgroundColor: Colors.green,
                 ),
                 title: Container(
-                  color: Colors.pink,
-                  width: 20.0, // 不生效？？
-                  height: 30,
+                    color: Colors.pink,
+                    height: 25,
                 ),
                 subtitle: Container(
                   margin: EdgeInsets.only(top: 10),
-                  width: 100, // 不生效？？
                   color: Colors.pink,
-                  height: 30,
+                  height: 25,
                 ),
-              )
+              ),
             ],
           ),
         ),

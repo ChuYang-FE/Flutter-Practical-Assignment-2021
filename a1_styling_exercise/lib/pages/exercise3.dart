@@ -40,7 +40,7 @@ class myExercise3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        width: 310, // 不设置具体宽度如何使内部元素居中
+        width: 310,
         child: Stack(
           children: circles,
           alignment: Alignment.center,
